@@ -1,0 +1,28 @@
+---
+abstract: 'build POD documentation like MARCEL'
+author:
+  - 'Marcel Gruenauer <marcel@cpan.org>'
+build_requires: {}
+configure_requires:
+  ExtUtils::MakeMaker: 6.11
+generated_by: 'Dist::Zilla version 1.100660'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Pod-Weaver-PluginBundle-MARCEL
+provides:
+  Pod::Weaver::PluginBundle::MARCEL:
+    file: lib/Pod/Weaver/PluginBundle/MARCEL.pm
+    version: 1.100690
+requires:
+  English: 0
+  File::Find: 0
+  File::Temp: 0
+  Pod::Weaver::Config::Assembler: 0
+  Test::More: 0
+  namespace::autoclean: 0
+  perl: 5.008
+resources:
+  repository: origin
+version: 1.100690

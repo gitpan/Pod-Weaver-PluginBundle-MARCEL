@@ -1,0 +1,36 @@
+{
+   "resources" : {
+      "repository" : "origin"
+   },
+   "generated_by" : "Dist::Zilla version 1.100660",
+   "meta-spec" : {
+      "version" : 1.4,
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   },
+   "version" : "1.100690",
+   "name" : "Pod-Weaver-PluginBundle-MARCEL",
+   "author" : [
+      "Marcel Gruenauer <marcel@cpan.org>"
+   ],
+   "license" : "perl",
+   "build_requires" : {},
+   "provides" : {
+      "Pod::Weaver::PluginBundle::MARCEL" : {
+         "version" : "1.100690",
+         "file" : "lib/Pod/Weaver/PluginBundle/MARCEL.pm"
+      }
+   },
+   "requires" : {
+      "perl" : "5.008",
+      "Test::More" : "0",
+      "namespace::autoclean" : "0",
+      "English" : "0",
+      "File::Find" : "0",
+      "File::Temp" : "0",
+      "Pod::Weaver::Config::Assembler" : "0"
+   },
+   "abstract" : "build POD documentation like MARCEL",
+   "configure_requires" : {
+      "ExtUtils::MakeMaker" : "6.11"
+   }
+}

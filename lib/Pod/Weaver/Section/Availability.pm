@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Weaver::Section::Availability;
 BEGIN {
-  $Pod::Weaver::Section::Availability::VERSION = '1.100950';
+  $Pod::Weaver::Section::Availability::VERSION = '1.100980';
 }
 
 # ABSTRACT: add a AVAILABILITY pod section
@@ -27,12 +27,12 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see
 L<http://search.cpan.org/dist/$name/>.
-
-The development version lives at
-L<http://github.com/hanekomu/$name/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
 EOPOD
+#
+# The development version lives at
+# L<http://github.com/hanekomu/$name/>.
+# Instead of sending patches, please fork this project using the standard git
+# and github infrastructure.
                         }
                     ),
                 ],
@@ -52,7 +52,7 @@ Pod::Weaver::Section::Availability - add a AVAILABILITY pod section
 
 =head1 VERSION
 
-version 1.100950
+version 1.100980
 
 =head1 SYNOPSIS
 
@@ -92,11 +92,6 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see
 L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/>.
-
-The development version lives at
-L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
 
 =head1 AUTHOR
 

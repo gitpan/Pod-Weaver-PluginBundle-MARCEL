@@ -20,7 +20,7 @@ my %WriteMakefileArgs = (
                        'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
                        'BUILD_REQUIRES' => {
                                              'Scalar::Util' => '0',
-                                             'Test::More' => '0.88',
+                                             'Test::More' => '0.94',
                                              'English' => '0',
                                              'File::Find' => '0',
                                              'File::Temp' => '0',
@@ -28,7 +28,7 @@ my %WriteMakefileArgs = (
                                            },
                        'ABSTRACT' => 'build POD documentation like MARCEL',
                        'EXE_FILES' => [],
-                       'VERSION' => '1.100950',
+                       'VERSION' => '1.100980',
                        'PREREQ_PM' => {
                                         'namespace::autoclean' => '0',
                                         'Pod::Weaver::Role::Section' => '0',

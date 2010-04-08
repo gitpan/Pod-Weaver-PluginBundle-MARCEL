@@ -2,7 +2,7 @@ NAME
     Pod::Weaver::PluginBundle::MARCEL - build POD documentation like MARCEL
 
 VERSION
-    version 1.100950
+    version 1.100980
 
 SYNOPSIS
     In "weaver.ini":
@@ -63,11 +63,6 @@ AVAILABILITY
     Perl Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a
     CPAN site near you, or see
     <http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/>.
-
-    The development version lives at
-    <http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>. Instead of
-    sending patches, please fork this project using the standard git and
-    github infrastructure.
 
 AUTHOR
       Marcel Gruenauer <marcel@cpan.org>

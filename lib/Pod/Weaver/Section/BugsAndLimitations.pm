@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Weaver::Section::BugsAndLimitations;
 BEGIN {
-  $Pod::Weaver::Section::BugsAndLimitations::VERSION = '1.100950';
+  $Pod::Weaver::Section::BugsAndLimitations::VERSION = '1.100980';
 }
 
 # ABSTRACT: add a BUGS AND LIMITATIONS pod section
@@ -48,7 +48,7 @@ Pod::Weaver::Section::BugsAndLimitations - add a BUGS AND LIMITATIONS pod sectio
 
 =head1 VERSION
 
-version 1.100950
+version 1.100980
 
 =head1 SYNOPSIS
 
@@ -88,11 +88,6 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see
 L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/>.
-
-The development version lives at
-L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
 
 =head1 AUTHOR
 

@@ -4,10 +4,10 @@ use warnings;
 
 package Pod::Weaver::Section::BugsAndLimitations;
 BEGIN {
-  $Pod::Weaver::Section::BugsAndLimitations::VERSION = '1.100980';
+  $Pod::Weaver::Section::BugsAndLimitations::VERSION = '1.101520';
 }
 
-# ABSTRACT: add a BUGS AND LIMITATIONS pod section
+# ABSTRACT: Add a BUGS AND LIMITATIONS pod section
 use Moose;
 with 'Pod::Weaver::Role::Section';
 use namespace::autoclean;
@@ -15,7 +15,7 @@ use Moose::Autobox;
 
 sub weave_section {
     my ($self, $document, $input) = @_;
-    my $bugtracker = $input->{zilla}->distmeta->{resources}{bugtracker}
+    my $bugtracker = $input->{zilla}->distmeta->{resources}{bugtracker}{url}
       || 'http://rt.cpan.org';
     $document->children->push(
         Pod::Elemental::Element::Nested->new(
@@ -44,11 +44,11 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::BugsAndLimitations - add a BUGS AND LIMITATIONS pod section
+Pod::Weaver::Section::BugsAndLimitations - Add a BUGS AND LIMITATIONS pod section
 
 =head1 VERSION
 
-version 1.100980
+version 1.101520
 
 =head1 SYNOPSIS
 
@@ -80,7 +80,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-PluginBundle-MARCEL>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 
@@ -88,6 +88,11 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see
 L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/>.
+
+The development version lives at
+L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>.
+Instead of sending patches, please fork this project using the standard git
+and github infrastructure.
 
 =head1 AUTHOR
 

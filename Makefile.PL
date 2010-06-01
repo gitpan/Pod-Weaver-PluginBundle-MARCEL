@@ -9,41 +9,50 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-                       'test' => {
-                                   'TESTS' => 't/*.t'
-                                 },
-                       'NAME' => 'Pod::Weaver::PluginBundle::MARCEL',
-                       'DISTNAME' => 'Pod-Weaver-PluginBundle-MARCEL',
-                       'CONFIGURE_REQUIRES' => {
-                                                 'ExtUtils::MakeMaker' => '6.31'
-                                               },
-                       'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
-                       'BUILD_REQUIRES' => {
-                                             'Scalar::Util' => '0',
-                                             'Test::More' => '0.94',
-                                             'English' => '0',
-                                             'File::Find' => '0',
-                                             'File::Temp' => '0',
-                                             'Carp' => '0'
-                                           },
-                       'ABSTRACT' => 'build POD documentation like MARCEL',
-                       'EXE_FILES' => [],
-                       'VERSION' => '1.100980',
-                       'PREREQ_PM' => {
-                                        'namespace::autoclean' => '0',
-                                        'Pod::Weaver::Role::Section' => '0',
-                                        'Moose::Autobox' => '0',
-                                        'Pod::Weaver::Section::CollectWithAutoDoc' => '0',
-                                        'Pod::Weaver::Config::Assembler' => '0',
-                                        'Pod::Weaver::Section::Installation' => '0',
-                                        'Moose' => '0'
-                                      },
-                       'LICENSE' => 'perl'
-                     );
+  'ABSTRACT' => 'Build POD documentation like MARCEL',
+  'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
+  'BUILD_REQUIRES' => {
+    'Carp' => '0',
+    'English' => '0',
+    'File::Find' => '0',
+    'File::Temp' => '0',
+    'Scalar::Util' => '0',
+    'Test::More' => '0.94'
+  },
+  'CONFIGURE_REQUIRES' => {
+    'ExtUtils::MakeMaker' => '6.31'
+  },
+  'DISTNAME' => 'Pod-Weaver-PluginBundle-MARCEL',
+  'EXE_FILES' => [],
+  'LICENSE' => 'perl',
+  'NAME' => 'Pod::Weaver::PluginBundle::MARCEL',
+  'PREREQ_PM' => {
+    'Moose' => '0',
+    'Moose::Autobox' => '0',
+    'Pod::Weaver::Config::Assembler' => '0',
+    'Pod::Weaver::Role::Section' => '0',
+    'Pod::Weaver::Section::Installation' => '0',
+    'namespace::autoclean' => '0'
+  },
+  'VERSION' => '1.101520',
+  'test' => {
+    'TESTS' => 't/*.t'
+  }
+);
 
 
-delete $WriteMakefileArgs{BUILD_REQUIRES}
-  unless eval { ExtUtils::MakeMaker->VERSION(6.56) };
+unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
+  my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
+  my $pp = $WriteMakefileArgs{PREREQ_PM}; 
+  for my $mod ( keys %$br ) {
+    if ( exists $pp->{$mod} ) {
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod}; 
+    }
+    else {
+      $pp->{$mod} = $br->{$mod};
+    }
+  }
+}
 
 delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
   unless eval { ExtUtils::MakeMaker->VERSION(6.52) };

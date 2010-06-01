@@ -1,5 +1,5 @@
 ---
-abstract: 'build POD documentation like MARCEL'
+abstract: 'Build POD documentation like MARCEL'
 author:
   - 'Marcel Gruenauer <marcel@cpan.org>'
 build_requires:
@@ -11,7 +11,8 @@ build_requires:
   Test::More: 0.94
 configure_requires:
   ExtUtils::MakeMaker: 6.31
-generated_by: 'Dist::Zilla version 2.100960'
+dynamic_config: 0
+generated_by: 'Dist::Zilla version 3.101461, CPAN::Meta::Converter version 2.101461'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -20,25 +21,23 @@ name: Pod-Weaver-PluginBundle-MARCEL
 provides:
   Pod::Weaver::PluginBundle::MARCEL:
     file: lib/Pod/Weaver/PluginBundle/MARCEL.pm
-    version: 1.100980
+    version: 1.101520
   Pod::Weaver::Section::Availability:
     file: lib/Pod/Weaver/Section/Availability.pm
-    version: 1.100980
+    version: 1.101520
   Pod::Weaver::Section::BugsAndLimitations:
     file: lib/Pod/Weaver/Section/BugsAndLimitations.pm
-    version: 1.100980
-recommends: {}
+    version: 1.101520
 requires:
   Moose: 0
   Moose::Autobox: 0
   Pod::Weaver::Config::Assembler: 0
   Pod::Weaver::Role::Section: 0
-  Pod::Weaver::Section::CollectWithAutoDoc: 0
   Pod::Weaver::Section::Installation: 0
   namespace::autoclean: 0
   perl: 5.008
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-PluginBundle-MARCEL
   homepage: http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/
-  repository: origin
-version: 1.100980
+  repository: http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL
+version: 1.101520

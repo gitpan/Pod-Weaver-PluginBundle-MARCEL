@@ -4,10 +4,10 @@ use warnings;
 
 package Pod::Weaver::Section::Availability;
 BEGIN {
-  $Pod::Weaver::Section::Availability::VERSION = '1.100980';
+  $Pod::Weaver::Section::Availability::VERSION = '1.101520';
 }
 
-# ABSTRACT: add a AVAILABILITY pod section
+# ABSTRACT: Add an AVAILABILITY pod section
 use Moose;
 with 'Pod::Weaver::Role::Section';
 use namespace::autoclean;
@@ -27,12 +27,12 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see
 L<http://search.cpan.org/dist/$name/>.
+
+The development version lives at
+L<http://github.com/hanekomu/$name/>.
+Instead of sending patches, please fork this project using the standard git
+and github infrastructure.
 EOPOD
-#
-# The development version lives at
-# L<http://github.com/hanekomu/$name/>.
-# Instead of sending patches, please fork this project using the standard git
-# and github infrastructure.
                         }
                     ),
                 ],
@@ -48,11 +48,11 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::Availability - add a AVAILABILITY pod section
+Pod::Weaver::Section::Availability - Add an AVAILABILITY pod section
 
 =head1 VERSION
 
-version 1.100980
+version 1.101520
 
 =head1 SYNOPSIS
 
@@ -84,7 +84,7 @@ See perlmodinstall for information and options on installing Perl modules.
 No bugs have been reported.
 
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org/Public/Dist/Display.html?Name=Pod-Weaver-PluginBundle-MARCEL>.
+L<http://rt.cpan.org>.
 
 =head1 AVAILABILITY
 
@@ -92,6 +92,11 @@ The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you, or see
 L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/>.
+
+The development version lives at
+L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>.
+Instead of sending patches, please fork this project using the standard git
+and github infrastructure.
 
 =head1 AUTHOR
 

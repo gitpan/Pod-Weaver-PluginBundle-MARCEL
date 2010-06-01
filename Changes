@@ -1,5 +1,10 @@
 Revision history for Perl extension Pod-Weaver-PluginBundle-MARCEL
 
+1.101520  2010-06-01 12:40:24 Europe/Vienna
+    - METHODS use Collect, not CollectWithAutoDoc
+    - fix "Bugs and Limitations" section to work with Dist::Zilla v3 and
+      CPAN::Meta::Converter
+
 1.100980  2010-04-08 16:35:10 Europe/Vienna
     - [Availability]: remove information on GitHub
 

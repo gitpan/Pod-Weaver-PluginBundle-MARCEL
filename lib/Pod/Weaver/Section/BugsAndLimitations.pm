@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Weaver::Section::BugsAndLimitations;
 BEGIN {
-  $Pod::Weaver::Section::BugsAndLimitations::VERSION = '1.101520';
+  $Pod::Weaver::Section::BugsAndLimitations::VERSION = '1.102340';
 }
 
 # ABSTRACT: Add a BUGS AND LIMITATIONS pod section
@@ -42,13 +42,16 @@ EOPOD
 __END__
 =pod
 
+=for test_synopsis 1;
+__END__
+
 =head1 NAME
 
 Pod::Weaver::Section::BugsAndLimitations - Add a BUGS AND LIMITATIONS pod section
 
 =head1 VERSION
 
-version 1.101520
+version 1.102340
 
 =head1 SYNOPSIS
 
@@ -67,9 +70,6 @@ C<@MARCEL> weaver bundle.
 =head2 weave_section
 
 adds the C<BUGS AND LIMITATIONS> section.
-
-=for test_synopsis 1;
-__END__
 
 =head1 INSTALLATION
 
@@ -94,9 +94,19 @@ L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>.
 Instead of sending patches, please fork this project using the standard git
 and github infrastructure.
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-  Marcel Gruenauer <marcel@cpan.org>
+=over 4
+
+=item *
+
+Marcel Gruenauer <marcel@cpan.org>
+
+=item *
+
+Nigel Metheringham <nigel.metheringham@cpan.com>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE
 

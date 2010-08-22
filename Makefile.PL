@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
- BEGIN { require 5.008; } 
+BEGIN { require 5.008; }
 
 use ExtUtils::MakeMaker 6.31;
 
@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.31;
 
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'Build POD documentation like MARCEL',
-  'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
+  'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>, Nigel Metheringham <nigel.metheringham@cpan.com>',
   'BUILD_REQUIRES' => {
     'Carp' => '0',
     'English' => '0',
@@ -34,7 +34,7 @@ my %WriteMakefileArgs = (
     'Pod::Weaver::Section::Installation' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '1.101520',
+  'VERSION' => '1.102340',
   'test' => {
     'TESTS' => 't/*.t'
   }
@@ -43,10 +43,10 @@ my %WriteMakefileArgs = (
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
   my $br = delete $WriteMakefileArgs{BUILD_REQUIRES};
-  my $pp = $WriteMakefileArgs{PREREQ_PM}; 
+  my $pp = $WriteMakefileArgs{PREREQ_PM};
   for my $mod ( keys %$br ) {
     if ( exists $pp->{$mod} ) {
-      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod}; 
+      $pp->{$mod} = $br->{$mod} if $br->{$mod} > $pp->{$mod};
     }
     else {
       $pp->{$mod} = $br->{$mod};

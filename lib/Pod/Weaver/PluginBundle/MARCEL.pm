@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Weaver::PluginBundle::MARCEL;
 BEGIN {
-  $Pod::Weaver::PluginBundle::MARCEL::VERSION = '1.101520';
+  $Pod::Weaver::PluginBundle::MARCEL::VERSION = '1.102340';
 }
 
 # ABSTRACT: Build POD documentation like MARCEL
@@ -54,7 +54,7 @@ Pod::Weaver::PluginBundle::MARCEL - Build POD documentation like MARCEL
 
 =head1 VERSION
 
-version 1.101520
+version 1.102340
 
 =head1 SYNOPSIS
 
@@ -126,9 +126,19 @@ L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>.
 Instead of sending patches, please fork this project using the standard git
 and github infrastructure.
 
-=head1 AUTHOR
+=head1 AUTHORS
 
-  Marcel Gruenauer <marcel@cpan.org>
+=over 4
+
+=item *
+
+Marcel Gruenauer <marcel@cpan.org>
+
+=item *
+
+Nigel Metheringham <nigel.metheringham@cpan.com>
+
+=back
 
 =head1 COPYRIGHT AND LICENSE
 

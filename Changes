@@ -1,5 +1,8 @@
 Revision history for Perl extension Pod-Weaver-PluginBundle-MARCEL
 
+1.102340  2010-08-22 20:07:24 Europe/Vienna
+    - made Availability plugin use dist metadata info (nigelm)
+
 1.101520  2010-06-01 12:40:24 Europe/Vienna
     - METHODS use Collect, not CollectWithAutoDoc
     - fix "Bugs and Limitations" section to work with Dist::Zilla v3 and

@@ -1,14 +1,17 @@
 {
    "abstract" : "Build POD documentation like MARCEL",
    "author" : [
-      "Marcel Gruenauer <marcel@cpan.org>"
+      "Marcel Gruenauer <marcel@cpan.org>",
+      "Nigel Metheringham <nigel.metheringham@cpan.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 3.101461",
-   "license" : "perl_5",
+   "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
+   "license" : [
+      "perl_5"
+   ],
    "meta-spec" : {
-      "url" : "http://github.com/dagolden/cpan-meta/",
-      "version" : 2
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
    },
    "name" : "Pod-Weaver-PluginBundle-MARCEL",
    "prereqs" : {
@@ -19,22 +22,22 @@
       },
       "runtime" : {
          "requires" : {
-            "Moose" : "0",
-            "Moose::Autobox" : "0",
-            "Pod::Weaver::Config::Assembler" : "0",
-            "Pod::Weaver::Role::Section" : "0",
-            "Pod::Weaver::Section::Installation" : "0",
-            "namespace::autoclean" : "0",
+            "Moose" : 0,
+            "Moose::Autobox" : 0,
+            "Pod::Weaver::Config::Assembler" : 0,
+            "Pod::Weaver::Role::Section" : 0,
+            "Pod::Weaver::Section::Installation" : 0,
+            "namespace::autoclean" : 0,
             "perl" : "5.008"
          }
       },
       "test" : {
          "requires" : {
-            "Carp" : "0",
-            "English" : "0",
-            "File::Find" : "0",
-            "File::Temp" : "0",
-            "Scalar::Util" : "0",
+            "Carp" : 0,
+            "English" : 0,
+            "File::Find" : 0,
+            "File::Temp" : 0,
+            "Scalar::Util" : 0,
             "Test::More" : "0.94"
          }
       }
@@ -42,17 +45,18 @@
    "provides" : {
       "Pod::Weaver::PluginBundle::MARCEL" : {
          "file" : "lib/Pod/Weaver/PluginBundle/MARCEL.pm",
-         "version" : "1.101520"
+         "version" : "1.102340"
       },
       "Pod::Weaver::Section::Availability" : {
          "file" : "lib/Pod/Weaver/Section/Availability.pm",
-         "version" : "1.101520"
+         "version" : "1.102340"
       },
       "Pod::Weaver::Section::BugsAndLimitations" : {
          "file" : "lib/Pod/Weaver/Section/BugsAndLimitations.pm",
-         "version" : "1.101520"
+         "version" : "1.102340"
       }
    },
+   "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
          "mailto" : "bug-pod-weaver-pluginbundle-marcel at rt.cpan.org",
@@ -63,6 +67,6 @@
          "url" : "http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL"
       }
    },
-   "version" : "1.101520"
+   "version" : "1.102340"
 }
 

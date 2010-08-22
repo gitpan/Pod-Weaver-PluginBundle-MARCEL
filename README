@@ -2,7 +2,7 @@ NAME
     Pod::Weaver::PluginBundle::MARCEL - Build POD documentation like MARCEL
 
 VERSION
-    version 1.101520
+    version 1.102340
 
 SYNOPSIS
     In "weaver.ini":
@@ -68,8 +68,10 @@ AVAILABILITY
     sending patches, please fork this project using the standard git and
     github infrastructure.
 
-AUTHOR
-      Marcel Gruenauer <marcel@cpan.org>
+AUTHORS
+    *   Marcel Gruenauer <marcel@cpan.org>
+
+    *   Nigel Metheringham <nigel.metheringham@cpan.com>
 
 COPYRIGHT AND LICENSE
     This software is copyright (c) 2010 by Marcel Gruenauer.

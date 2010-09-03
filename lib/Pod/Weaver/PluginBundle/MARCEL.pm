@@ -4,7 +4,7 @@ use warnings;
 
 package Pod::Weaver::PluginBundle::MARCEL;
 BEGIN {
-  $Pod::Weaver::PluginBundle::MARCEL::VERSION = '1.102340';
+  $Pod::Weaver::PluginBundle::MARCEL::VERSION = '1.102460';
 }
 
 # ABSTRACT: Build POD documentation like MARCEL
@@ -12,6 +12,8 @@ use namespace::autoclean;
 use Pod::Weaver::Config::Assembler;
 
 # plugins used
+use Pod::Weaver::Section::Availability;
+use Pod::Weaver::Section::BugsAndLimitations;
 use Pod::Weaver::Section::Installation;
 
 sub _exp { Pod::Weaver::Config::Assembler->expand_package($_[0]) }
@@ -54,7 +56,7 @@ Pod::Weaver::PluginBundle::MARCEL - Build POD documentation like MARCEL
 
 =head1 VERSION
 
-version 1.102340
+version 1.102460
 
 =head1 SYNOPSIS
 
@@ -118,27 +120,16 @@ L<http://rt.cpan.org>.
 
 The latest version of this module is available from the Comprehensive Perl
 Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
-site near you, or see
-L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/>.
+site near you, or see L<http://search.cpan.org/dist/Pod-Weaver-PluginBundle-MARCEL/>.
 
-The development version lives at
-L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL/>.
-Instead of sending patches, please fork this project using the standard git
-and github infrastructure.
+The development version lives at L<http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL>
+and may be cloned from L<git://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL>.
+Instead of sending patches, please fork this project using the standard
+git and github infrastructure.
 
-=head1 AUTHORS
-
-=over 4
-
-=item *
+=head1 AUTHOR
 
 Marcel Gruenauer <marcel@cpan.org>
-
-=item *
-
-Nigel Metheringham <nigel.metheringham@cpan.com>
-
-=back
 
 =head1 COPYRIGHT AND LICENSE
 

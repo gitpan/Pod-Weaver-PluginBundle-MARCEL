@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker 6.31;
 
 my %WriteMakefileArgs = (
   'ABSTRACT' => 'Build POD documentation like MARCEL',
-  'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>, Nigel Metheringham <nigel.metheringham@cpan.com>',
+  'AUTHOR' => 'Marcel Gruenauer <marcel@cpan.org>',
   'BUILD_REQUIRES' => {
     'Carp' => '0',
     'English' => '0',
@@ -27,14 +27,13 @@ my %WriteMakefileArgs = (
   'LICENSE' => 'perl',
   'NAME' => 'Pod::Weaver::PluginBundle::MARCEL',
   'PREREQ_PM' => {
-    'Moose' => '0',
-    'Moose::Autobox' => '0',
     'Pod::Weaver::Config::Assembler' => '0',
-    'Pod::Weaver::Role::Section' => '0',
+    'Pod::Weaver::Section::Availability' => '0',
+    'Pod::Weaver::Section::BugsAndLimitations' => '0',
     'Pod::Weaver::Section::Installation' => '0',
     'namespace::autoclean' => '0'
   },
-  'VERSION' => '1.102340',
+  'VERSION' => '1.102460',
   'test' => {
     'TESTS' => 't/*.t'
   }

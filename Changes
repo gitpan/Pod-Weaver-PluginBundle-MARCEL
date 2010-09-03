@@ -1,5 +1,9 @@
 Revision history for Perl extension Pod-Weaver-PluginBundle-MARCEL
 
+1.102460  2010-09-03 12:27:44 Europe/Vienna
+    - removed Pod::Weaver::Section::Availability and ::BugsAndLimitations,
+      since they will live in their own distributions now
+
 1.102340  2010-08-22 20:07:24 Europe/Vienna
     - made Availability plugin use dist metadata info (nigelm)
 

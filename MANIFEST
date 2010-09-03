@@ -8,8 +8,6 @@ META.yml
 Makefile.PL
 README
 lib/Pod/Weaver/PluginBundle/MARCEL.pm
-lib/Pod/Weaver/Section/Availability.pm
-lib/Pod/Weaver/Section/BugsAndLimitations.pm
 t/00-compile.t
 t/000-report-versions.t
 t/author-critic.t

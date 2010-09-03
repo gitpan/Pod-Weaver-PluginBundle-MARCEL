@@ -1,8 +1,7 @@
 {
    "abstract" : "Build POD documentation like MARCEL",
    "author" : [
-      "Marcel Gruenauer <marcel@cpan.org>",
-      "Nigel Metheringham <nigel.metheringham@cpan.com>"
+      "Marcel Gruenauer <marcel@cpan.org>"
    ],
    "dynamic_config" : 0,
    "generated_by" : "Dist::Zilla version 4.101900, CPAN::Meta::Converter version 2.101670",
@@ -22,10 +21,9 @@
       },
       "runtime" : {
          "requires" : {
-            "Moose" : 0,
-            "Moose::Autobox" : 0,
             "Pod::Weaver::Config::Assembler" : 0,
-            "Pod::Weaver::Role::Section" : 0,
+            "Pod::Weaver::Section::Availability" : 0,
+            "Pod::Weaver::Section::BugsAndLimitations" : 0,
             "Pod::Weaver::Section::Installation" : 0,
             "namespace::autoclean" : 0,
             "perl" : "5.008"
@@ -45,15 +43,7 @@
    "provides" : {
       "Pod::Weaver::PluginBundle::MARCEL" : {
          "file" : "lib/Pod/Weaver/PluginBundle/MARCEL.pm",
-         "version" : "1.102340"
-      },
-      "Pod::Weaver::Section::Availability" : {
-         "file" : "lib/Pod/Weaver/Section/Availability.pm",
-         "version" : "1.102340"
-      },
-      "Pod::Weaver::Section::BugsAndLimitations" : {
-         "file" : "lib/Pod/Weaver/Section/BugsAndLimitations.pm",
-         "version" : "1.102340"
+         "version" : "1.102460"
       }
    },
    "release_status" : "stable",
@@ -67,6 +57,6 @@
          "url" : "http://github.com/hanekomu/Pod-Weaver-PluginBundle-MARCEL"
       }
    },
-   "version" : "1.102340"
+   "version" : "1.102460"
 }
 
